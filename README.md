@@ -35,7 +35,7 @@ On line 44: Enter your phone number in the format "+1##########"
 
 ## Implementation
 
-I have a slightly modified version of the program which I am running on a Raspbery Pi 3b+. The program runs every morning and will notify me of the due dats of my current assignments. This way I am always notified if I have an assignment due today.
+I have a slightly modified version of the program which I am running on a Raspbery Pi 3b+. The program runs every morning and will notify me of the due dates of my current assignments. This way I am always notified if I have an assignment due today.
 
 ### Contact
 
