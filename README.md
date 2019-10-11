@@ -1,4 +1,4 @@
-# Zybooks Assignments Reminder
+# Zybooks Assignment Reminder
 
 ![](img/text.jpg)
 
@@ -40,4 +40,4 @@ I have a slightly modified version of the program which I am running on a Raspbe
 ### Contact
 
 Ayush Petigara
-email - aarvyushpetigara3 at gmail.com
+email - aarvyushpetigara3@gmail.com
