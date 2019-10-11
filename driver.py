@@ -1,3 +1,4 @@
+# Ayush Petigara
 # import required modules
 import time
 import getpass
@@ -6,11 +7,11 @@ from selenium import webdriver
 
 # url that I am trying to access
 url = 'https://learn.zybooks.com/zybook/CLEMSONCPSC3300AllenFall2019'
-email = 'email to login'
+email = 'your zybooks email'
 
 password = getpass.getpass(prompt='Please enter your zybooks password: ')
 
-driver = webdriver.Chrome(executable_path='your web driver path')
+driver = webdriver.Chrome(executable_path='path to your chrome driver')
 driver.get(url)
 
 driver.find_element_by_css_selector("input[type='email']").send_keys(email)
@@ -25,7 +26,7 @@ due_date = []
 due_date = driver.find_elements_by_xpath("//*[@class='due-date-text']")
 
 # formatting the output
-result = "Hi, \n Due dates of your zybooks assignments: \n"
+result = "Hi, \n Following are the due dates of your zybooks assignments: \n"
 for i in due_date:
     text = i.text.split('\n')
     if (text[0] == 'Due:'):
@@ -34,14 +35,14 @@ for i in due_date:
 
 # using twilio client to send the SMS
 account_sid = 'your twilio account sid'
-auth_token = 'you twilio auth token'
+auth_token = 'your twilio auth token'
 client = Client(account_sid, auth_token)
 
 message = client.messages \
                 .create(
                      body=result,
-                     from_='+1234567890',
-                     to='+1234567890'
+                     from_='+1##########',
+                     to='+1##########'
                  )
 
 print(message.sid)
